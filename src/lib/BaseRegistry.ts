@@ -1,16 +1,12 @@
-import { JSONRegistry, registryDataMapper, RegistryMetadata, RegistryName } from './registryDataMapper';
+import { JSONRegistry, RegistryMetadata } from './interfaces';
 
-export class OAuthRegistry {
+export abstract class BaseRegistry {
   #data: JSONRegistry;
   name: string;
   metadata: RegistryMetadata;
   parameters: Record<string, string | undefined>[];
 
-  constructor(registryName: RegistryName) {
-    const data = registryDataMapper[registryName];
-    if (!data) {
-      throw new Error(`Registry with name ${registryName} not found.`);
-    }
+  protected constructor(data: JSONRegistry) {
     this.#data = data;
     this.name = this.#data.name;
     this.metadata = this.#data.metadata;
@@ -21,12 +17,12 @@ export class OAuthRegistry {
     return this.parameters.find((item) => item.name === parameter);
   }
 
-  getMetadata(): RegistryMetadata {
-    return this.metadata;
-  }
-
   getParameters(): Record<string, string | undefined>[] {
     return this.parameters;
+  }
+
+  getMetadata(): RegistryMetadata {
+    return this.metadata;
   }
 
   getName(): string {

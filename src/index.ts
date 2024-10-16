@@ -1,1 +1,1 @@
-export { OAuthRegistry } from './lib/OAuthRegistry';
+export * from './lib/index';

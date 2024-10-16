@@ -4,7 +4,8 @@
   "main": "dist/index.js",
   "scripts": {
     "generate-data": "tsc && node dist/scripts/importAndProcessDatasources.js",
-    "build": "npm run generate-data && tsc"
+    "build": "npm run generate-data && tsc",
+    "pretty": "prettier --write ."
   },
   "files": [
     "dist/data",

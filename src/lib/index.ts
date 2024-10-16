@@ -1,0 +1,11 @@
+export { OAuthAccessTokenTypesRegistry } from './OAuthAccessTokenTypesRegistry';
+export { OAuthAuthorizationEndpointResponseTypesRegistry } from './OAuthAuthorizationEndpointResponseTypesRegistry';
+export { OAuthAuthorizationServerMetadataRegistry } from './OAuthAuthorizationServerMetadataRegistry';
+export { OAuthDynamicClientRegistrationMetadataRegistry } from './OAuthDynamicClientRegistrationMetadataRegistry';
+export { OAuthExtensionsErrorRegistry } from './OAuthExtensionsErrorRegistry';
+export { OAuthParametersRegistry } from './OAuthParametersRegistry';
+export { OAuthTokenEndpointAuthenticationMethodsRegistry } from './OAuthTokenEndpointAuthenticationMethodsRegistry';
+export { OAuthTokenIntrospectionResponseRegistry } from './OAuthTokenIntrospectionResponseRegistry';
+export { OAuthTokenTypeHintsRegistry } from './OAuthTokenTypeHintsRegistry';
+export { OAuthUriRegistry } from './OAuthUriRegistry';
+export { OAuthPkceCodeChallengeMethodsRegistry } from './OAuthPkceCodeChallengeMethodsRegistry';

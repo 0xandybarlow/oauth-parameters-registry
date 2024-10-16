@@ -12,7 +12,9 @@ const processDataSources = async () => {
   try {
     await fs.mkdir(dataDir, { recursive: true });
     await fs.mkdir(scriptsDataDir, { recursive: true });
-    console.log(`Directories created or already exist: ${dataDir}, ${scriptsDataDir}`);
+    console.log(
+      `Directories created or already exist: ${dataDir}, ${scriptsDataDir}`,
+    );
   } catch (error) {
     throw new Error(
       `Error creating directories: ${dataDir}, ${scriptsDataDir}, message: ${(error as Error).message}`,
@@ -36,10 +38,15 @@ const processDataSources = async () => {
       };
 
       const filePath = path.join(dataDir, generateFilename(datasource.name));
-      const scriptsFilePath = path.join(scriptsDataDir, generateFilename(datasource.name));
+      const scriptsFilePath = path.join(
+        scriptsDataDir,
+        generateFilename(datasource.name),
+      );
       await writeJSON(filePath, IANAJson);
       await writeJSON(scriptsFilePath, IANAJson);
-      console.log(`Files written successfully: ${filePath}, ${scriptsFilePath}`);
+      console.log(
+        `Files written successfully: ${filePath}, ${scriptsFilePath}`,
+      );
     } catch (error) {
       console.error(
         `Error whilst processing: ${datasource.url}, message: ${(error as Error).message}`,
@@ -48,8 +55,10 @@ const processDataSources = async () => {
   }
 };
 
-processDataSources().then(() => {
-  console.log('Processing datasources completed successfully');
-}).catch(error => {
-  console.error(`Processing datasources failed: ${error.message}`);
-});
+processDataSources()
+  .then(() => {
+    console.log('Processing datasources completed successfully');
+  })
+  .catch((error) => {
+    console.error(`Processing datasources failed: ${error.message}`);
+  });

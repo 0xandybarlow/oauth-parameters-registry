@@ -57,5 +57,3 @@ export const datasources: RegistryMetadata[] = [
     required_specifications: ['RFC8414'],
   },
 ];
-
-
