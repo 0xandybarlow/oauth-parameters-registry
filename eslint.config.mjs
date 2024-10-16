@@ -19,9 +19,10 @@ export default [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'prettier',
   ),
   {
-    files: ['src/**/*.ts'], // Only apply to TypeScript files
+    files: ['src/**/*.ts'],
     plugins: {
       '@typescript-eslint': typescriptEslint,
       prettier,

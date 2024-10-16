@@ -1,16 +1,18 @@
 import { BaseRegistry } from './BaseRegistry';
 import data from '../data/oauth_token_endpoint_authentication_methods.json';
+import { OAuthTokenEndpointAuthenticationMethodsPayload } from './interfaces';
 
-export class OAuthTokenEndpointAuthenticationMethodsRegistry extends BaseRegistry {
+export class OAuthTokenEndpointAuthenticationMethodsRegistry extends BaseRegistry<OAuthTokenEndpointAuthenticationMethodsPayload> {
   constructor() {
     super(data);
   }
 
   getParameter(
     parameter: string,
-  ): Record<string, string | undefined> | undefined {
-    return this.parameters.find(
-      (item) => item.token_endpoint_authentication_method_name === parameter,
+  ): OAuthTokenEndpointAuthenticationMethodsPayload | undefined {
+    return this.getParametersInternal().find(
+      (item: OAuthTokenEndpointAuthenticationMethodsPayload) =>
+        item.token_endpoint_authentication_method_name === parameter,
     );
   }
 }
