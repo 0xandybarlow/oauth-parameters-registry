@@ -1,0 +1,40 @@
+{
+  "name": "OAuth Access Token Types",
+  "metadata": {
+    "required_specifications": [
+      "RFC6749, RFC8414"
+    ],
+    "datasource_url": "https://www.iana.org/assignments/oauth-parameters/token-types.csv",
+    "last_processed": "2024-10-17T07:46:39.043Z"
+  },
+  "parameters": [
+    {
+      "name": "Bearer",
+      "additional_token_endpoint_response_parameters": "",
+      "http_authentication_scheme": "Bearer",
+      "change_controller": "IETF",
+      "reference": "RFC6750"
+    },
+    {
+      "name": "N_A",
+      "additional_token_endpoint_response_parameters": "",
+      "http_authentication_scheme": "",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 2.2.1"
+    },
+    {
+      "name": "PoP",
+      "additional_token_endpoint_response_parameters": "cnf, rs_cnf (see section 3.1 of RFC8747 and section 3.2 of RFC9201).",
+      "http_authentication_scheme": "N/A",
+      "change_controller": "IETF",
+      "reference": "RFC9200"
+    },
+    {
+      "name": "DPoP",
+      "additional_token_endpoint_response_parameters": "",
+      "http_authentication_scheme": "DPoP",
+      "change_controller": "IETF",
+      "reference": "RFC9449"
+    }
+  ]
+}

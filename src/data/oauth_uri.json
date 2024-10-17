@@ -1,0 +1,102 @@
+{
+  "name": "OAuth URI",
+  "metadata": {
+    "required_specifications": [
+      "RFC6755"
+    ],
+    "datasource_url": "https://www.iana.org/assignments/oauth-parameters/uri.csv",
+    "last_processed": "2024-10-17T07:46:39.043Z"
+  },
+  "parameters": [
+    {
+      "urn": "urn:ietf:params:oauth:grant-type:jwt-bearer",
+      "common_name": "JWT Bearer Token Grant Type Profile for OAuth 2.0",
+      "change_controller": "IESG",
+      "reference": "RFC7523"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:client-assertion-type:jwt-bearer",
+      "common_name": "JWT Bearer Token Profile for OAuth 2.0 Client Authentication",
+      "change_controller": "IESG",
+      "reference": "RFC7523"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:grant-type:saml2-bearer",
+      "common_name": "SAML 2.0 Bearer Assertion Grant Type Profile for OAuth 2.0",
+      "change_controller": "IESG",
+      "reference": "RFC7522"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:client-assertion-type:saml2-bearer",
+      "common_name": "SAML 2.0 Bearer Assertion Profile for OAuth 2.0 Client Authentication",
+      "change_controller": "IESG",
+      "reference": "RFC7522"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:token-type:jwt",
+      "common_name": "JSON Web Token (JWT) Token Type",
+      "change_controller": "IESG",
+      "reference": "RFC7519"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:grant-type:device_code",
+      "common_name": "Device flow grant type for OAuth 2.0",
+      "change_controller": "IESG",
+      "reference": "RFC8628, Section 3.1"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:grant-type:token-exchange",
+      "common_name": "Token exchange grant type for OAuth 2.0",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 2.1"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:token-type:access_token",
+      "common_name": "Token type URI for an OAuth 2.0 access token",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 3"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:token-type:refresh_token",
+      "common_name": "Token type URI for an OAuth 2.0 refresh token",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 3"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:token-type:id_token",
+      "common_name": "Token type URI for an ID Token",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 3"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:token-type:saml1",
+      "common_name": "Token type URI for a base64url-encoded SAML 1.1 assertion",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 3"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:token-type:saml2",
+      "common_name": "Token type URI for a base64url-encoded SAML 2.0 assertion",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 3"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:request_uri",
+      "common_name": "A URN Sub-Namespace for OAuth Request URIs.",
+      "change_controller": "IESG",
+      "reference": "RFC9126, Section 2.2"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:jwk-thumbprint",
+      "common_name": "JWK Thumbprint URI",
+      "change_controller": "IESG",
+      "reference": "RFC9278"
+    },
+    {
+      "urn": "urn:ietf:params:oauth:ckt",
+      "common_name": "COSE Key Thumbprint URI",
+      "change_controller": "IETF",
+      "reference": "RFC-ietf-cose-key-thumbprint-06"
+    }
+  ]
+}

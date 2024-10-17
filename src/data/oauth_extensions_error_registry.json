@@ -1,0 +1,215 @@
+{
+  "name": "OAuth Extensions Error Registry",
+  "metadata": {
+    "required_specifications": [
+      "RFC6749"
+    ],
+    "datasource_url": "https://www.iana.org/assignments/oauth-parameters/extensions-error.csv",
+    "last_processed": "2024-10-17T07:46:39.043Z"
+  },
+  "parameters": [
+    {
+      "name": "invalid_request",
+      "usage_location": "resource access error response",
+      "protocol_extension": "bearer access token type",
+      "change_controller": "IETF",
+      "reference": "RFC6750"
+    },
+    {
+      "name": "invalid_token",
+      "usage_location": "resource access error response",
+      "protocol_extension": "bearer access token type",
+      "change_controller": "IETF",
+      "reference": "RFC6750"
+    },
+    {
+      "name": "insufficient_scope",
+      "usage_location": "resource access error response",
+      "protocol_extension": "bearer access token type",
+      "change_controller": "IETF",
+      "reference": "RFC6750"
+    },
+    {
+      "name": "unsupported_token_type",
+      "usage_location": "revocation endpoint error response",
+      "protocol_extension": "token revocation endpoint",
+      "change_controller": "IETF",
+      "reference": "RFC7009"
+    },
+    {
+      "name": "interaction_required",
+      "usage_location": "authorization endpoint",
+      "protocol_extension": "OpenID Connect",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "login_required",
+      "usage_location": "authorization endpoint",
+      "protocol_extension": "OpenID Connect",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "account_selection_required",
+      "usage_location": "authorization endpoint",
+      "protocol_extension": "OpenID Connect",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "consent_required",
+      "usage_location": "authorization endpoint",
+      "protocol_extension": "OpenID Connect",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "invalid_request_uri",
+      "usage_location": "authorization endpoint",
+      "protocol_extension": "OpenID Connect",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "invalid_request_object",
+      "usage_location": "authorization endpoint",
+      "protocol_extension": "OpenID Connect",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "request_not_supported",
+      "usage_location": "authorization endpoint",
+      "protocol_extension": "OpenID Connect",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "request_uri_not_supported",
+      "usage_location": "authorization endpoint",
+      "protocol_extension": "OpenID Connect",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "registration_not_supported",
+      "usage_location": "authorization endpoint",
+      "protocol_extension": "OpenID Connect",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "need_info (and its subsidiary parameters)",
+      "usage_location": "authorization server response, token endpoint",
+      "protocol_extension": "Kantara UMA",
+      "change_controller": "Kantara_UMA_WG",
+      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.6"
+    },
+    {
+      "name": "request_denied",
+      "usage_location": "authorization server response, token endpoint",
+      "protocol_extension": "Kantara UMA",
+      "change_controller": "Kantara_UMA_WG",
+      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.6"
+    },
+    {
+      "name": "request_submitted (and its subsidiary parameters)",
+      "usage_location": "authorization server response, token endpoint",
+      "protocol_extension": "Kantara UMA",
+      "change_controller": "Kantara_UMA_WG",
+      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.6"
+    },
+    {
+      "name": "authorization_pending",
+      "usage_location": "Token endpoint response",
+      "protocol_extension": "RFC8628",
+      "change_controller": "IETF",
+      "reference": "RFC8628, Section 3.5"
+    },
+    {
+      "name": "access_denied",
+      "usage_location": "Token endpoint response",
+      "protocol_extension": "RFC8628",
+      "change_controller": "IETF",
+      "reference": "RFC8628, Section 3.5"
+    },
+    {
+      "name": "slow_down",
+      "usage_location": "Token endpoint response",
+      "protocol_extension": "RFC8628",
+      "change_controller": "IETF",
+      "reference": "RFC8628, Section 3.5"
+    },
+    {
+      "name": "expired_token",
+      "usage_location": "Token endpoint response",
+      "protocol_extension": "RFC8628",
+      "change_controller": "IETF",
+      "reference": "RFC8628, Section 3.5"
+    },
+    {
+      "name": "invalid_target",
+      "usage_location": "implicit grant error response, token error response",
+      "protocol_extension": "resource parameter",
+      "change_controller": "IESG",
+      "reference": "RFC8707"
+    },
+    {
+      "name": "unsupported_pop_key",
+      "usage_location": "token error response",
+      "protocol_extension": "RFC9200",
+      "change_controller": "IETF",
+      "reference": "RFC9200, Section 5.8.3"
+    },
+    {
+      "name": "incompatible_ace_profiles",
+      "usage_location": "token error response",
+      "protocol_extension": "RFC9200",
+      "change_controller": "IETF",
+      "reference": "RFC9200, Section 5.8.3"
+    },
+    {
+      "name": "invalid_authorization_details",
+      "usage_location": "token endpoint, authorization endpoint",
+      "protocol_extension": "OAuth 2.0 Rich Authorization Requests",
+      "change_controller": "IETF",
+      "reference": "RFC9396, Section 5"
+    },
+    {
+      "name": "invalid_dpop_proof",
+      "usage_location": "token error response, resource access error response",
+      "protocol_extension": "Demonstrating Proof of Possession (DPoP)",
+      "change_controller": "IETF",
+      "reference": "RFC9449"
+    },
+    {
+      "name": "use_dpop_nonce",
+      "usage_location": "token error response, resource access error response",
+      "protocol_extension": "Demonstrating Proof of Possession (DPoP)",
+      "change_controller": "IETF",
+      "reference": "RFC9449"
+    },
+    {
+      "name": "insufficient_user_authentication",
+      "usage_location": "resource access error response",
+      "protocol_extension": "OAuth 2.0 Step Up Authentication Challenge Protocol",
+      "change_controller": "IETF",
+      "reference": "RFC9470, Section 3"
+    },
+    {
+      "name": "missing_trust_anchor",
+      "usage_location": "Authorization Endpoint",
+      "protocol_extension": "OpenID Federation",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "Section 12.1.2 of OpenID Federation 1.0"
+    },
+    {
+      "name": "validation_failed",
+      "usage_location": "Authorization Endpoint",
+      "protocol_extension": "OpenID Federation",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "Section 12.1.2 of OpenID Federation 1.0"
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "name": "OAuth Dynamic Client Registration Metadata",
+  "metadata": {
+    "required_specifications": [
+      "RFC7591"
+    ],
+    "datasource_url": "https://www.iana.org/assignments/oauth-parameters/client-metadata.csv",
+    "last_processed": "2024-10-17T07:46:39.043Z"
+  },
+  "parameters": [
+    {
+      "client_metadata_name": "redirect_uris",
+      "client_metadata_description": "Array of redirection URIs for use in redirect-based flows",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "token_endpoint_auth_method",
+      "client_metadata_description": "Requested authentication method for the token endpoint",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "grant_types",
+      "client_metadata_description": "Array of OAuth 2.0 grant types that the client may use",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "response_types",
+      "client_metadata_description": "Array of the OAuth 2.0 response types that the client may use",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "client_name",
+      "client_metadata_description": "Human-readable name of the client to be presented to the user",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "client_uri",
+      "client_metadata_description": "URL of a web page providing information about the client",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "logo_uri",
+      "client_metadata_description": "URL that references a logo for the client",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "scope",
+      "client_metadata_description": "Space-separated list of OAuth 2.0 scope values",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "contacts",
+      "client_metadata_description": "Array of strings representing ways to contact people responsible for this client, typically email addresses",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "tos_uri",
+      "client_metadata_description": "URL that points to a human-readable terms of service document for the client",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "policy_uri",
+      "client_metadata_description": "URL that points to a human-readable policy document for the client",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "jwks_uri",
+      "client_metadata_description": "URL referencing the client's JSON Web Key Set RFC7517 document representing the client's public keys",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "jwks",
+      "client_metadata_description": "Client's JSON Web Key Set RFC7517 document representing the client's public keys",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "software_id",
+      "client_metadata_description": "Identifier for the software that comprises a client",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "software_version",
+      "client_metadata_description": "Version identifier for the software that comprises a client",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "client_id",
+      "client_metadata_description": "Client identifier",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "client_secret",
+      "client_metadata_description": "Client secret",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "client_id_issued_at",
+      "client_metadata_description": "Time at which the client identifier was issued",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "client_secret_expires_at",
+      "client_metadata_description": "Time at which the client secret will expire",
+      "change_controller": "IESG",
+      "reference": "RFC7591"
+    },
+    {
+      "client_metadata_name": "registration_access_token",
+      "client_metadata_description": "OAuth 2.0 Bearer Token used to access\n      the client configuration endpoint",
+      "change_controller": "IESG",
+      "reference": "RFC7592"
+    },
+    {
+      "client_metadata_name": "registration_client_uri",
+      "client_metadata_description": "Fully qualified URI of the client\n      registration endpoint",
+      "change_controller": "IESG",
+      "reference": "RFC7592"
+    },
+    {
+      "client_metadata_name": "application_type",
+      "client_metadata_description": "Kind of the application -- \"native\" or \"web\"",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "sector_identifier_uri",
+      "client_metadata_description": "URL using the https scheme to be used in calculating Pseudonymous Identifiers by the OP",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "subject_type",
+      "client_metadata_description": "subject_type requested for responses to this Client -- \"pairwise\" or \"public\"",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "id_token_signed_response_alg",
+      "client_metadata_description": "JWS alg algorithm REQUIRED for signing the ID Token issued to this Client",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "id_token_encrypted_response_alg",
+      "client_metadata_description": "JWE alg algorithm REQUIRED for encrypting the ID Token issued to this Client",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "id_token_encrypted_response_enc",
+      "client_metadata_description": "JWE enc algorithm REQUIRED for encrypting the ID Token issued to this Client",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "userinfo_signed_response_alg",
+      "client_metadata_description": "JWS alg algorithm REQUIRED for signing UserInfo Responses",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "userinfo_encrypted_response_alg",
+      "client_metadata_description": "JWE alg algorithm REQUIRED for encrypting UserInfo Responses",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "userinfo_encrypted_response_enc",
+      "client_metadata_description": "JWE enc algorithm REQUIRED for encrypting UserInfo Responses",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "request_object_signing_alg",
+      "client_metadata_description": "JWS alg algorithm that MUST be used for signing Request Objects sent to the OP",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "request_object_encryption_alg",
+      "client_metadata_description": "JWE alg algorithm the RP is declaring that it may use for encrypting Request Objects sent to the OP",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "request_object_encryption_enc",
+      "client_metadata_description": "JWE enc algorithm the RP is declaring that it may use for encrypting Request Objects sent to the OP",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "token_endpoint_auth_signing_alg",
+      "client_metadata_description": "JWS alg algorithm that MUST be used for signing the JWT used to authenticate the Client at the Token Endpoint for the private_key_jwt and client_secret_jwt authentication methods",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "default_max_age",
+      "client_metadata_description": "Default Maximum Authentication Age",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "require_auth_time",
+      "client_metadata_description": "Boolean value specifying whether the auth_time Claim in the ID Token is REQUIRED",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "default_acr_values",
+      "client_metadata_description": "Default requested Authentication Context Class Reference values",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "initiate_login_uri",
+      "client_metadata_description": "URI using the https scheme that a third party can use to initiate a login by the RP",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "request_uris",
+      "client_metadata_description": "Array of request_uri values that are pre-registered by the RP for use at the OP",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Dynamic Client Registration 1.0 incorporating errata set 2"
+    },
+    {
+      "client_metadata_name": "claims_redirect_uris",
+      "client_metadata_description": "claims redirection endpoints",
+      "change_controller": "Kantara_UMA_WG",
+      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 2"
+    },
+    {
+      "client_metadata_name": "nfv_token_signed_response_alg",
+      "client_metadata_description": "JWS alg algorithm required for signing the nfv Token issued to this Client",
+      "change_controller": "ETSI",
+      "reference": "ETSI GS NFV-SEC 022 V2.7.1"
+    },
+    {
+      "client_metadata_name": "nfv_token_encrypted_response_alg",
+      "client_metadata_description": "JWE alg algorithm required for encrypting the nfv Token issued to this Client",
+      "change_controller": "ETSI",
+      "reference": "ETSI GS NFV-SEC 022 V2.7.1"
+    },
+    {
+      "client_metadata_name": "nfv_token_encrypted_response_enc",
+      "client_metadata_description": "JWE enc algorithm required for encrypting the nfv Token issued to this Client",
+      "change_controller": "ETSI",
+      "reference": "ETSI GS NFV-SEC 022 V2.7.1"
+    },
+    {
+      "client_metadata_name": "tls_client_certificate_bound_access_tokens",
+      "client_metadata_description": "Indicates the client's intention to\n        use mutual-TLS client certificate-bound access tokens.",
+      "change_controller": "IESG",
+      "reference": "RFC8705, Section 3.4"
+    },
+    {
+      "client_metadata_name": "tls_client_auth_subject_dn",
+      "client_metadata_description": "String value specifying the expected\n        subject DN of the client certificate.",
+      "change_controller": "IESG",
+      "reference": "RFC8705, Section 2.1.2"
+    },
+    {
+      "client_metadata_name": "tls_client_auth_san_dns",
+      "client_metadata_description": "String value specifying the expected\n        dNSName SAN entry in the client certificate.",
+      "change_controller": "IESG",
+      "reference": "RFC8705, Section 2.1.2"
+    },
+    {
+      "client_metadata_name": "tls_client_auth_san_uri",
+      "client_metadata_description": "String value specifying the expected\n        uniformResourceIdentifier SAN entry in the client certificate.",
+      "change_controller": "IESG",
+      "reference": "RFC8705, Section 2.1.2"
+    },
+    {
+      "client_metadata_name": "tls_client_auth_san_ip",
+      "client_metadata_description": "String value specifying the expected\n        iPAddress SAN entry in the client certificate.",
+      "change_controller": "IESG",
+      "reference": "RFC8705, Section 2.1.2"
+    },
+    {
+      "client_metadata_name": "tls_client_auth_san_email",
+      "client_metadata_description": "String value specifying the expected\n        rfc822Name SAN entry in the client certificate.",
+      "change_controller": "IESG",
+      "reference": "RFC8705, Section 2.1.2"
+    },
+    {
+      "client_metadata_name": "require_signed_request_object",
+      "client_metadata_description": "Indicates where authorization request needs\n        to be protected as Request Object and provided through either\n        request or request_uri parameter.",
+      "change_controller": "IETF",
+      "reference": "RFC9101, Section 10.5"
+    },
+    {
+      "client_metadata_name": "require_pushed_authorization_requests",
+      "client_metadata_description": "Indicates whether the client is required to use PAR to initiate authorization requests.",
+      "change_controller": "IESG",
+      "reference": "RFC9126, Section 6"
+    },
+    {
+      "client_metadata_name": "introspection_signed_response_alg",
+      "client_metadata_description": "String value indicating the client's\n        desired introspection response signing algorithm.",
+      "change_controller": "IETF",
+      "reference": "RFC-ietf-oauth-jwt-introspection-response-12, Section 6"
+    },
+    {
+      "client_metadata_name": "introspection_encrypted_response_alg",
+      "client_metadata_description": "String value specifying the desired\n        introspection response content key encryption algorithm (alg\n        value).",
+      "change_controller": "IETF",
+      "reference": "RFC-ietf-oauth-jwt-introspection-response-12, Section 6"
+    },
+    {
+      "client_metadata_name": "introspection_encrypted_response_enc",
+      "client_metadata_description": "String value specifying the desired\n        introspection response content encryption algorithm (enc value).",
+      "change_controller": "IETF",
+      "reference": "RFC-ietf-oauth-jwt-introspection-response-12, Section 6"
+    },
+    {
+      "client_metadata_name": "frontchannel_logout_uri",
+      "client_metadata_description": "RP URL that will cause the RP to log itself out when rendered in an iframe by the OP",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Front-Channel Logout 1.0, Section 2"
+    },
+    {
+      "client_metadata_name": "frontchannel_logout_session_required",
+      "client_metadata_description": "Boolean value specifying whether the RP requires that a sid (session ID) query parameter be included to identify the RP session with the OP when the frontchannel_logout_uri is used",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Front-Channel Logout 1.0, Section 2"
+    },
+    {
+      "client_metadata_name": "backchannel_logout_uri",
+      "client_metadata_description": "RP URL that will cause the RP to log itself out when sent a Logout Token by the OP",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Back-Channel Logout 1.0, Section 2.2"
+    },
+    {
+      "client_metadata_name": "backchannel_logout_session_required",
+      "client_metadata_description": "Boolean value specifying whether the RP requires that a sid (session ID) Claim be included in the Logout Token to identify the RP session with the OP when the backchannel_logout_uri is used",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Back-Channel Logout 1.0, Section 2.2"
+    },
+    {
+      "client_metadata_name": "post_logout_redirect_uris",
+      "client_metadata_description": "Array of URLs supplied by the RP to which it MAY request that the End-User's User Agent be redirected using the post_logout_redirect_uri parameter after a logout has been performed",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect RP-Initiated Logout 1.0, Section 3.1"
+    },
+    {
+      "client_metadata_name": "authorization_details_types",
+      "client_metadata_description": "Indicates what authorization details types the client uses.",
+      "change_controller": "IETF",
+      "reference": "RFC9396, Section 10"
+    },
+    {
+      "client_metadata_name": "dpop_bound_access_tokens",
+      "client_metadata_description": "Boolean value specifying whether the client always uses DPoP for token requests",
+      "change_controller": "IETF",
+      "reference": "RFC9449, Section 5.2"
+    },
+    {
+      "client_metadata_name": "client_registration_types",
+      "client_metadata_description": "An array of strings specifying the client registration types the RP wants to use",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "Section 5.1.2 of OpenID Federation 1.0"
+    },
+    {
+      "client_metadata_name": "signed_jwks_uri",
+      "client_metadata_description": "URL referencing a signed JWT having the client's JWK Set document as its payload",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "Section 5.2.1 of OpenID Federation 1.0"
+    },
+    {
+      "client_metadata_name": "organization_name",
+      "client_metadata_description": "Human-readable name representing the organization owning this client",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "Section 5.2.2 of OpenID Federation 1.0"
+    },
+    {
+      "client_metadata_name": "homepage_uri",
+      "client_metadata_description": "URL of a Web page for the organization owning this client",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "Section 5.2.2 of OpenID Federation 1.0"
+    }
+  ]
+}

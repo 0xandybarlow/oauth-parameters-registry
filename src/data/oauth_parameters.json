@@ -1,0 +1,468 @@
+{
+  "name": "OAuth Parameters",
+  "metadata": {
+    "required_specifications": [
+      "RFC6749"
+    ],
+    "datasource_url": "https://www.iana.org/assignments/oauth-parameters/parameters.csv",
+    "last_processed": "2024-10-17T07:46:39.043Z"
+  },
+  "parameters": [
+    {
+      "name": "client_id",
+      "parameter_usage_location": "authorization request, token request",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "client_secret",
+      "parameter_usage_location": "token request",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "response_type",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "redirect_uri",
+      "parameter_usage_location": "authorization request, token request",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "scope",
+      "parameter_usage_location": "authorization request, authorization response, token request, token response",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "state",
+      "parameter_usage_location": "authorization request, authorization response",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "code",
+      "parameter_usage_location": "authorization response, token request",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "error",
+      "parameter_usage_location": "authorization response, token response",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "error_description",
+      "parameter_usage_location": "authorization response, token response",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "error_uri",
+      "parameter_usage_location": "authorization response, token response",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "grant_type",
+      "parameter_usage_location": "token request",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "access_token",
+      "parameter_usage_location": "authorization response, token response",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "token_type",
+      "parameter_usage_location": "authorization response, token response",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "expires_in",
+      "parameter_usage_location": "authorization response, token response",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "username",
+      "parameter_usage_location": "token request",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "password",
+      "parameter_usage_location": "token request",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "refresh_token",
+      "parameter_usage_location": "token request, token response",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "nonce",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "display",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "prompt",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "max_age",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "ui_locales",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "claims_locales",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "id_token_hint",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "login_hint",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "acr_values",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "claims",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "registration",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "request",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "request_uri",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "id_token",
+      "parameter_usage_location": "authorization response, access token response",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Core 1.0 incorporating errata set 1"
+    },
+    {
+      "name": "session_state",
+      "parameter_usage_location": "authorization response, access token response",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OpenID Connect Session Management 1.0, Section 2"
+    },
+    {
+      "name": "assertion",
+      "parameter_usage_location": "token request",
+      "change_controller": "IESG",
+      "reference": "RFC7521"
+    },
+    {
+      "name": "client_assertion",
+      "parameter_usage_location": "token request",
+      "change_controller": "IESG",
+      "reference": "RFC7521"
+    },
+    {
+      "name": "client_assertion_type",
+      "parameter_usage_location": "token request",
+      "change_controller": "IESG",
+      "reference": "RFC7521"
+    },
+    {
+      "name": "code_verifier",
+      "parameter_usage_location": "token request",
+      "change_controller": "IESG",
+      "reference": "RFC7636"
+    },
+    {
+      "name": "code_challenge",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "IESG",
+      "reference": "RFC7636"
+    },
+    {
+      "name": "code_challenge_method",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "IESG",
+      "reference": "RFC7636"
+    },
+    {
+      "name": "claim_token",
+      "parameter_usage_location": "client request, token endpoint",
+      "change_controller": "Kantara_UMA_WG",
+      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.1"
+    },
+    {
+      "name": "pct",
+      "parameter_usage_location": "client request, token endpoint",
+      "change_controller": "Kantara_UMA_WG",
+      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.1"
+    },
+    {
+      "name": "pct",
+      "parameter_usage_location": "authorization server response, token endpoint",
+      "change_controller": "Kantara_UMA_WG",
+      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.5"
+    },
+    {
+      "name": "rpt",
+      "parameter_usage_location": "client request, token endpoint",
+      "change_controller": "Kantara_UMA_WG",
+      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.1"
+    },
+    {
+      "name": "ticket",
+      "parameter_usage_location": "client request, token endpoint",
+      "change_controller": "Kantara_UMA_WG",
+      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.1"
+    },
+    {
+      "name": "upgraded",
+      "parameter_usage_location": "authorization server response, token endpoint",
+      "change_controller": "Kantara_UMA_WG",
+      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.5"
+    },
+    {
+      "name": "vtr",
+      "parameter_usage_location": "authorization request, token request",
+      "change_controller": "IESG",
+      "reference": "RFC8485"
+    },
+    {
+      "name": "device_code",
+      "parameter_usage_location": "token request",
+      "change_controller": "IESG",
+      "reference": "RFC8628, Section 3.1"
+    },
+    {
+      "name": "resource",
+      "parameter_usage_location": "authorization request, token request",
+      "change_controller": "IESG",
+      "reference": "RFC8707"
+    },
+    {
+      "name": "audience",
+      "parameter_usage_location": "token request",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 2.1"
+    },
+    {
+      "name": "requested_token_type",
+      "parameter_usage_location": "token request",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 2.1"
+    },
+    {
+      "name": "subject_token",
+      "parameter_usage_location": "token request",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 2.1"
+    },
+    {
+      "name": "subject_token_type",
+      "parameter_usage_location": "token request",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 2.1"
+    },
+    {
+      "name": "actor_token",
+      "parameter_usage_location": "token request",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 2.1"
+    },
+    {
+      "name": "actor_token_type",
+      "parameter_usage_location": "token request",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 2.1"
+    },
+    {
+      "name": "issued_token_type",
+      "parameter_usage_location": "token response",
+      "change_controller": "IESG",
+      "reference": "RFC8693, Section 2.2.1"
+    },
+    {
+      "name": "response_mode",
+      "parameter_usage_location": "Authorization Request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OAuth 2.0 Multiple Response Type Encoding Practices"
+    },
+    {
+      "name": "nfv_token",
+      "parameter_usage_location": "Access Token Response",
+      "change_controller": "ETSI",
+      "reference": "ETSI GS NFV-SEC 022 V2.7.1"
+    },
+    {
+      "name": "iss",
+      "parameter_usage_location": "authorization request, authorization response",
+      "change_controller": "IETF",
+      "reference": "RFC9207, Section 2RFC9101RFC7519, Section 4.1.1"
+    },
+    {
+      "name": "sub",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "IETF",
+      "reference": "RFC7519, Section 4.1.2RFC9101"
+    },
+    {
+      "name": "aud",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "IETF",
+      "reference": "RFC7519, Section 4.1.3RFC9101"
+    },
+    {
+      "name": "exp",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "IETF",
+      "reference": "RFC7519, Section 4.1.4RFC9101"
+    },
+    {
+      "name": "nbf",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "IETF",
+      "reference": "RFC7519, Section 4.1.5RFC9101"
+    },
+    {
+      "name": "iat",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "IETF",
+      "reference": "RFC7519, Section 4.1.6RFC9101"
+    },
+    {
+      "name": "jti",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "IETF",
+      "reference": "RFC7519, Section 4.1.7RFC9101"
+    },
+    {
+      "name": "ace_profile",
+      "parameter_usage_location": "token response",
+      "change_controller": "IETF",
+      "reference": "RFC9200, Sections 5.8.2, 5.8.4.3"
+    },
+    {
+      "name": "nonce1",
+      "parameter_usage_location": "client-rs request",
+      "change_controller": "IETF",
+      "reference": "RFC9203"
+    },
+    {
+      "name": "nonce2",
+      "parameter_usage_location": "rs-client response",
+      "change_controller": "IETF",
+      "reference": "RFC9203"
+    },
+    {
+      "name": "ace_client_recipientid",
+      "parameter_usage_location": "client-rs request",
+      "change_controller": "IETF",
+      "reference": "RFC9203"
+    },
+    {
+      "name": "ace_server_recipientid",
+      "parameter_usage_location": "rs-client response",
+      "change_controller": "IETF",
+      "reference": "RFC9203"
+    },
+    {
+      "name": "req_cnf",
+      "parameter_usage_location": "token request",
+      "change_controller": "IETF",
+      "reference": "RFC9201, Section 5"
+    },
+    {
+      "name": "rs_cnf",
+      "parameter_usage_location": "token response",
+      "change_controller": "IETF",
+      "reference": "RFC9201, Section 5"
+    },
+    {
+      "name": "cnf",
+      "parameter_usage_location": "token response",
+      "change_controller": "IETF",
+      "reference": "RFC9201, Section 5"
+    },
+    {
+      "name": "authorization_details",
+      "parameter_usage_location": "authorization request, token request, token response",
+      "change_controller": "IETF",
+      "reference": "RFC9396"
+    },
+    {
+      "name": "dpop_jkt",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "IETF",
+      "reference": "RFC9449, Section 10"
+    },
+    {
+      "name": "sign_info",
+      "parameter_usage_location": "client-rs request, rs-client response",
+      "change_controller": "IETF",
+      "reference": "RFC9594"
+    },
+    {
+      "name": "kdcchallenge",
+      "parameter_usage_location": "rs-client response",
+      "change_controller": "IETF",
+      "reference": "RFC9594"
+    },
+    {
+      "name": "trust_chain",
+      "parameter_usage_location": "authorization request",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "Section 12.1.1.1.2 of OpenID Federation 1.0"
+    }
+  ]
+}

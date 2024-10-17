@@ -1,0 +1,52 @@
+{
+  "name": "OAuth Authorization Endpoint Response Types",
+  "metadata": {
+    "required_specifications": [
+      "RFC6749"
+    ],
+    "datasource_url": "https://www.iana.org/assignments/oauth-parameters/endpoint.csv",
+    "last_processed": "2024-10-17T07:46:39.043Z"
+  },
+  "parameters": [
+    {
+      "name": "code",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    },
+    {
+      "name": "code id_token",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OAuth 2.0 Multiple Response Type Encoding Practices"
+    },
+    {
+      "name": "code id_token token",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OAuth 2.0 Multiple Response Type Encoding Practices"
+    },
+    {
+      "name": "code token",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OAuth 2.0 Multiple Response Type Encoding Practices"
+    },
+    {
+      "name": "id_token",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OAuth 2.0 Multiple Response Type Encoding Practices"
+    },
+    {
+      "name": "id_token token",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OAuth 2.0 Multiple Response Type Encoding Practices"
+    },
+    {
+      "name": "none",
+      "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
+      "reference": "OAuth 2.0 Multiple Response Type Encoding Practices"
+    },
+    {
+      "name": "token",
+      "change_controller": "IETF",
+      "reference": "RFC6749"
+    }
+  ]
+}

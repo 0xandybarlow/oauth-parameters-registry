@@ -1,0 +1,22 @@
+{
+  "name": "PKCE Code Challenge Methods",
+  "metadata": {
+    "required_specifications": [
+      "RFC7636"
+    ],
+    "datasource_url": "https://www.iana.org/assignments/oauth-parameters/pkce-code-challenge-method.csv",
+    "last_processed": "2024-10-17T07:46:39.043Z"
+  },
+  "parameters": [
+    {
+      "code_challenge_method_parameter_name": "plain",
+      "change_controller": "IESG",
+      "reference": "Section 4.2 of RFC7636"
+    },
+    {
+      "code_challenge_method_parameter_name": "S256",
+      "change_controller": "IESG",
+      "reference": "Section 4.2 of RFC7636"
+    }
+  ]
+}
