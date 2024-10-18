@@ -1,90 +1,88 @@
 {
   "name": "OAuth Token Introspection Response",
   "metadata": {
-    "required_specifications": [
-      "RFC7662"
-    ],
+    "required_specifications": ["RFC7662"],
     "datasource_url": "https://www.iana.org/assignments/oauth-parameters/token-introspection-response.csv",
-    "last_processed": "2024-10-17T07:46:39.043Z"
+    "last_processed": "2024-10-18T15:45:01.560Z"
   },
   "parameters": [
     {
       "name": "active",
       "description": "Token active status",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "username",
       "description": "User identifier of the resource owner",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "client_id",
       "description": "Client identifier of the client",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "scope",
       "description": "Authorized scopes of the token",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "token_type",
       "description": "Type of the token",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "exp",
       "description": "Expiration timestamp of the token",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "iat",
       "description": "Issuance timestamp of the token",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "nbf",
       "description": "Timestamp which the token is not valid before",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "sub",
       "description": "Subject of the token",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "aud",
       "description": "Audience of the token",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "iss",
       "description": "Issuer of the token",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "jti",
       "description": "Unique identifier of the token",
       "change_controller": "IESG",
-      "reference": "RFC7662, Section 2.2"
+      "reference": "RFC7662 - Section 2.2"
     },
     {
       "name": "permissions",
       "description": "array of objects, each describing a scoped, time-limitable permission for a resource",
       "change_controller": "Kantara_UMA_WG",
-      "reference": "Federated Authorization for UMA 2.0, Section 5.1.1"
+      "reference": "Federated Authorization for UMA 2.0 - Section 5.1.1"
     },
     {
       "name": "vot",
@@ -102,61 +100,61 @@
       "name": "act",
       "description": "Actor",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 4.1"
+      "reference": "RFC8693 - Section 4.1"
     },
     {
       "name": "may_act",
-      "description": "Authorized Actor - the party that is authorized\n        to become the actor",
+      "description": "Authorized Actor - the party that is authorized to become the actor",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 4.4"
+      "reference": "RFC8693 - Section 4.4"
     },
     {
       "name": "cnf",
       "description": "Confirmation",
       "change_controller": "IESG",
-      "reference": "RFC7800RFC8705"
+      "reference": "RFC7800, RFC8705"
     },
     {
       "name": "ace_profile",
       "description": "The ACE profile used between the client and RS.",
       "change_controller": "IETF",
-      "reference": "RFC9200, Section 5.9.2"
+      "reference": "RFC9200 - Section 5.9.2"
     },
     {
       "name": "cnonce",
-      "description": "\"client-nonce\".  A nonce previously provided to the\n        AS by the RS via the client.  Used to verify token freshness when\n        the RS cannot synchronize its clock with the AS.",
+      "description": "\"client-nonce\". A nonce previously provided to the AS by the RS via the client. Used to verify token freshness when the RS cannot synchronize its clock with the AS.",
       "change_controller": "IETF",
-      "reference": "RFC9200, Section 5.9.2"
+      "reference": "RFC9200 - Section 5.9.2"
     },
     {
       "name": "cti",
-      "description": "\"CWT ID\".  The identifier of a CWT as defined in\n        RFC8392.",
+      "description": "\"CWT ID\". The identifier of a CWT as defined in RFC8392.",
       "change_controller": "IETF",
-      "reference": "RFC9200, Section 5.9.2"
+      "reference": "RFC9200 - Section 5.9.2"
     },
     {
       "name": "exi",
       "description": "\"Expires in\". Lifetime of the token in seconds from the time the RS first sees it. Used to implement a weaker form of token expiration for devices that cannot synchronize their internal clocks.",
       "change_controller": "IETF",
-      "reference": "RFC9200, Section 5.9.2"
+      "reference": "RFC9200 - Section 5.9.2"
     },
     {
       "name": "authorization_details",
       "description": "The member authorization_details contains a JSON array of JSON objects representing the rights of the access token. Each JSON object contains the data to specify the authorization requirements for a certain type of resource.",
       "change_controller": "IETF",
-      "reference": "RFC9396, Section 9.2"
+      "reference": "RFC9396 - Section 9.2"
     },
     {
       "name": "acr",
       "description": "Authentication Context Class Reference",
       "change_controller": "IETF",
-      "reference": "RFC9470, Section 6.2"
+      "reference": "RFC9470 - Section 6.2"
     },
     {
       "name": "auth_time",
       "description": "Time when the user authentication occurred",
       "change_controller": "IETF",
-      "reference": "RFC9470, Section 6.2"
+      "reference": "RFC9470 - Section 6.2"
     }
   ]
 }

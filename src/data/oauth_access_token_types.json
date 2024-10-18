@@ -1,11 +1,9 @@
 {
   "name": "OAuth Access Token Types",
   "metadata": {
-    "required_specifications": [
-      "RFC6749, RFC8414"
-    ],
+    "required_specifications": ["RFC6749, RFC8414"],
     "datasource_url": "https://www.iana.org/assignments/oauth-parameters/token-types.csv",
-    "last_processed": "2024-10-17T07:46:39.043Z"
+    "last_processed": "2024-10-18T15:45:01.560Z"
   },
   "parameters": [
     {
@@ -20,7 +18,7 @@
       "additional_token_endpoint_response_parameters": "",
       "http_authentication_scheme": "",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 2.2.1"
+      "reference": "RFC8693 - Section 2.2.1"
     },
     {
       "name": "PoP",

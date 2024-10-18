@@ -1,12 +1,9 @@
 {
   "name": "OAuth Token Endpoint Authentication Methods",
   "metadata": {
-    "required_specifications": [
-      "RFC7591",
-      "RFC8414"
-    ],
+    "required_specifications": ["RFC7591", "RFC8414"],
     "datasource_url": "https://www.iana.org/assignments/oauth-parameters/token-endpoint-auth-method.csv",
-    "last_processed": "2024-10-17T07:46:39.043Z"
+    "last_processed": "2024-10-18T15:45:01.560Z"
   },
   "parameters": [
     {
@@ -37,12 +34,12 @@
     {
       "token_endpoint_authentication_method_name": "tls_client_auth",
       "change_controller": "IESG",
-      "reference": "RFC8705, Section 2.1.1"
+      "reference": "RFC8705 - Section 2.1.1"
     },
     {
       "token_endpoint_authentication_method_name": "self_signed_tls_client_auth",
       "change_controller": "IESG",
-      "reference": "RFC8705, Section 2.2.1"
+      "reference": "RFC8705 - Section 2.2.1"
     }
   ]
 }

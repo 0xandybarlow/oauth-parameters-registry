@@ -1,11 +1,9 @@
 {
   "name": "OAuth Extensions Error Registry",
   "metadata": {
-    "required_specifications": [
-      "RFC6749"
-    ],
+    "required_specifications": ["RFC6749"],
     "datasource_url": "https://www.iana.org/assignments/oauth-parameters/extensions-error.csv",
-    "last_processed": "2024-10-17T07:46:39.043Z"
+    "last_processed": "2024-10-18T15:45:01.560Z"
   },
   "parameters": [
     {
@@ -104,49 +102,49 @@
       "usage_location": "authorization server response, token endpoint",
       "protocol_extension": "Kantara UMA",
       "change_controller": "Kantara_UMA_WG",
-      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.6"
+      "reference": "UMA 2.0 Grant for OAuth 2.0 - Section 3.3.6"
     },
     {
       "name": "request_denied",
       "usage_location": "authorization server response, token endpoint",
       "protocol_extension": "Kantara UMA",
       "change_controller": "Kantara_UMA_WG",
-      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.6"
+      "reference": "UMA 2.0 Grant for OAuth 2.0 - Section 3.3.6"
     },
     {
       "name": "request_submitted (and its subsidiary parameters)",
       "usage_location": "authorization server response, token endpoint",
       "protocol_extension": "Kantara UMA",
       "change_controller": "Kantara_UMA_WG",
-      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.6"
+      "reference": "UMA 2.0 Grant for OAuth 2.0 - Section 3.3.6"
     },
     {
       "name": "authorization_pending",
       "usage_location": "Token endpoint response",
       "protocol_extension": "RFC8628",
       "change_controller": "IETF",
-      "reference": "RFC8628, Section 3.5"
+      "reference": "RFC8628 - Section 3.5"
     },
     {
       "name": "access_denied",
       "usage_location": "Token endpoint response",
       "protocol_extension": "RFC8628",
       "change_controller": "IETF",
-      "reference": "RFC8628, Section 3.5"
+      "reference": "RFC8628 - Section 3.5"
     },
     {
       "name": "slow_down",
       "usage_location": "Token endpoint response",
       "protocol_extension": "RFC8628",
       "change_controller": "IETF",
-      "reference": "RFC8628, Section 3.5"
+      "reference": "RFC8628 - Section 3.5"
     },
     {
       "name": "expired_token",
       "usage_location": "Token endpoint response",
       "protocol_extension": "RFC8628",
       "change_controller": "IETF",
-      "reference": "RFC8628, Section 3.5"
+      "reference": "RFC8628 - Section 3.5"
     },
     {
       "name": "invalid_target",
@@ -160,21 +158,21 @@
       "usage_location": "token error response",
       "protocol_extension": "RFC9200",
       "change_controller": "IETF",
-      "reference": "RFC9200, Section 5.8.3"
+      "reference": "RFC9200 - Section 5.8.3"
     },
     {
       "name": "incompatible_ace_profiles",
       "usage_location": "token error response",
       "protocol_extension": "RFC9200",
       "change_controller": "IETF",
-      "reference": "RFC9200, Section 5.8.3"
+      "reference": "RFC9200 - Section 5.8.3"
     },
     {
       "name": "invalid_authorization_details",
       "usage_location": "token endpoint, authorization endpoint",
       "protocol_extension": "OAuth 2.0 Rich Authorization Requests",
       "change_controller": "IETF",
-      "reference": "RFC9396, Section 5"
+      "reference": "RFC9396 - Section 5"
     },
     {
       "name": "invalid_dpop_proof",
@@ -195,7 +193,7 @@
       "usage_location": "resource access error response",
       "protocol_extension": "OAuth 2.0 Step Up Authentication Challenge Protocol",
       "change_controller": "IETF",
-      "reference": "RFC9470, Section 3"
+      "reference": "RFC9470 - Section 3"
     },
     {
       "name": "missing_trust_anchor",

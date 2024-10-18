@@ -1,11 +1,9 @@
 {
   "name": "OAuth Parameters",
   "metadata": {
-    "required_specifications": [
-      "RFC6749"
-    ],
+    "required_specifications": ["RFC6749"],
     "datasource_url": "https://www.iana.org/assignments/oauth-parameters/parameters.csv",
-    "last_processed": "2024-10-17T07:46:39.043Z"
+    "last_processed": "2024-10-18T15:45:01.560Z"
   },
   "parameters": [
     {
@@ -198,7 +196,7 @@
       "name": "session_state",
       "parameter_usage_location": "authorization response, access token response",
       "change_controller": "OpenID_Foundation_Artifact_Binding_Working_Group",
-      "reference": "OpenID Connect Session Management 1.0, Section 2"
+      "reference": "OpenID Connect Session Management 1.0 - Section 2"
     },
     {
       "name": "assertion",
@@ -240,37 +238,37 @@
       "name": "claim_token",
       "parameter_usage_location": "client request, token endpoint",
       "change_controller": "Kantara_UMA_WG",
-      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.1"
+      "reference": "UMA 2.0 Grant for OAuth 2.0 - Section 3.3.1"
     },
     {
       "name": "pct",
       "parameter_usage_location": "client request, token endpoint",
       "change_controller": "Kantara_UMA_WG",
-      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.1"
+      "reference": "UMA 2.0 Grant for OAuth 2.0 - Section 3.3.1"
     },
     {
       "name": "pct",
       "parameter_usage_location": "authorization server response, token endpoint",
       "change_controller": "Kantara_UMA_WG",
-      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.5"
+      "reference": "UMA 2.0 Grant for OAuth 2.0 - Section 3.3.5"
     },
     {
       "name": "rpt",
       "parameter_usage_location": "client request, token endpoint",
       "change_controller": "Kantara_UMA_WG",
-      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.1"
+      "reference": "UMA 2.0 Grant for OAuth 2.0 - Section 3.3.1"
     },
     {
       "name": "ticket",
       "parameter_usage_location": "client request, token endpoint",
       "change_controller": "Kantara_UMA_WG",
-      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.1"
+      "reference": "UMA 2.0 Grant for OAuth 2.0 - Section 3.3.1"
     },
     {
       "name": "upgraded",
       "parameter_usage_location": "authorization server response, token endpoint",
       "change_controller": "Kantara_UMA_WG",
-      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.3.5"
+      "reference": "UMA 2.0 Grant for OAuth 2.0 - Section 3.3.5"
     },
     {
       "name": "vtr",
@@ -282,7 +280,7 @@
       "name": "device_code",
       "parameter_usage_location": "token request",
       "change_controller": "IESG",
-      "reference": "RFC8628, Section 3.1"
+      "reference": "RFC8628 - Section 3.1"
     },
     {
       "name": "resource",
@@ -294,43 +292,43 @@
       "name": "audience",
       "parameter_usage_location": "token request",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 2.1"
+      "reference": "RFC8693 - Section 2.1"
     },
     {
       "name": "requested_token_type",
       "parameter_usage_location": "token request",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 2.1"
+      "reference": "RFC8693 - Section 2.1"
     },
     {
       "name": "subject_token",
       "parameter_usage_location": "token request",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 2.1"
+      "reference": "RFC8693 - Section 2.1"
     },
     {
       "name": "subject_token_type",
       "parameter_usage_location": "token request",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 2.1"
+      "reference": "RFC8693 - Section 2.1"
     },
     {
       "name": "actor_token",
       "parameter_usage_location": "token request",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 2.1"
+      "reference": "RFC8693 - Section 2.1"
     },
     {
       "name": "actor_token_type",
       "parameter_usage_location": "token request",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 2.1"
+      "reference": "RFC8693 - Section 2.1"
     },
     {
       "name": "issued_token_type",
       "parameter_usage_location": "token response",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 2.2.1"
+      "reference": "RFC8693 - Section 2.2.1"
     },
     {
       "name": "response_mode",
@@ -348,49 +346,49 @@
       "name": "iss",
       "parameter_usage_location": "authorization request, authorization response",
       "change_controller": "IETF",
-      "reference": "RFC9207, Section 2RFC9101RFC7519, Section 4.1.1"
+      "reference": "RFC9207 - Section 2, RFC9101, RFC7519 - Section 4.1.1"
     },
     {
       "name": "sub",
       "parameter_usage_location": "authorization request",
       "change_controller": "IETF",
-      "reference": "RFC7519, Section 4.1.2RFC9101"
+      "reference": "RFC7519 - Section 4.1.2, RFC9101"
     },
     {
       "name": "aud",
       "parameter_usage_location": "authorization request",
       "change_controller": "IETF",
-      "reference": "RFC7519, Section 4.1.3RFC9101"
+      "reference": "RFC7519 - Section 4.1.3, RFC9101"
     },
     {
       "name": "exp",
       "parameter_usage_location": "authorization request",
       "change_controller": "IETF",
-      "reference": "RFC7519, Section 4.1.4RFC9101"
+      "reference": "RFC7519 - Section 4.1.4, RFC9101"
     },
     {
       "name": "nbf",
       "parameter_usage_location": "authorization request",
       "change_controller": "IETF",
-      "reference": "RFC7519, Section 4.1.5RFC9101"
+      "reference": "RFC7519 - Section 4.1.5, RFC9101"
     },
     {
       "name": "iat",
       "parameter_usage_location": "authorization request",
       "change_controller": "IETF",
-      "reference": "RFC7519, Section 4.1.6RFC9101"
+      "reference": "RFC7519 - Section 4.1.6, RFC9101"
     },
     {
       "name": "jti",
       "parameter_usage_location": "authorization request",
       "change_controller": "IETF",
-      "reference": "RFC7519, Section 4.1.7RFC9101"
+      "reference": "RFC7519 - Section 4.1.7, RFC9101"
     },
     {
       "name": "ace_profile",
       "parameter_usage_location": "token response",
       "change_controller": "IETF",
-      "reference": "RFC9200, Sections 5.8.2, 5.8.4.3"
+      "reference": "RFC9200 - Sections 5.8.2, 5.8.4.3"
     },
     {
       "name": "nonce1",
@@ -420,19 +418,19 @@
       "name": "req_cnf",
       "parameter_usage_location": "token request",
       "change_controller": "IETF",
-      "reference": "RFC9201, Section 5"
+      "reference": "RFC9201 - Section 5"
     },
     {
       "name": "rs_cnf",
       "parameter_usage_location": "token response",
       "change_controller": "IETF",
-      "reference": "RFC9201, Section 5"
+      "reference": "RFC9201 - Section 5"
     },
     {
       "name": "cnf",
       "parameter_usage_location": "token response",
       "change_controller": "IETF",
-      "reference": "RFC9201, Section 5"
+      "reference": "RFC9201 - Section 5"
     },
     {
       "name": "authorization_details",
@@ -444,7 +442,7 @@
       "name": "dpop_jkt",
       "parameter_usage_location": "authorization request",
       "change_controller": "IETF",
-      "reference": "RFC9449, Section 10"
+      "reference": "RFC9449 - Section 10"
     },
     {
       "name": "sign_info",

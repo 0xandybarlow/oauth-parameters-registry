@@ -1,11 +1,9 @@
 {
   "name": "OAuth Token Type Hints",
   "metadata": {
-    "required_specifications": [
-      "RFC7009"
-    ],
+    "required_specifications": ["RFC7009"],
     "datasource_url": "https://www.iana.org/assignments/oauth-parameters/token-type-hint.csv",
-    "last_processed": "2024-10-17T07:46:39.043Z"
+    "last_processed": "2024-10-18T15:45:01.560Z"
   },
   "parameters": [
     {
@@ -21,7 +19,7 @@
     {
       "hint_value": "pct",
       "change_controller": "Kantara_UMA_WG",
-      "reference": "UMA 2.0 Grant for OAuth 2.0, Section 3.7"
+      "reference": "UMA 2.0 Grant for OAuth 2.0 - Section 3.7"
     }
   ]
 }

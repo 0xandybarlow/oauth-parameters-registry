@@ -1,11 +1,9 @@
 {
   "name": "OAuth URI",
   "metadata": {
-    "required_specifications": [
-      "RFC6755"
-    ],
+    "required_specifications": ["RFC6755"],
     "datasource_url": "https://www.iana.org/assignments/oauth-parameters/uri.csv",
-    "last_processed": "2024-10-17T07:46:39.043Z"
+    "last_processed": "2024-10-18T15:45:01.560Z"
   },
   "parameters": [
     {
@@ -42,49 +40,49 @@
       "urn": "urn:ietf:params:oauth:grant-type:device_code",
       "common_name": "Device flow grant type for OAuth 2.0",
       "change_controller": "IESG",
-      "reference": "RFC8628, Section 3.1"
+      "reference": "RFC8628 - Section 3.1"
     },
     {
       "urn": "urn:ietf:params:oauth:grant-type:token-exchange",
       "common_name": "Token exchange grant type for OAuth 2.0",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 2.1"
+      "reference": "RFC8693 - Section 2.1"
     },
     {
       "urn": "urn:ietf:params:oauth:token-type:access_token",
       "common_name": "Token type URI for an OAuth 2.0 access token",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 3"
+      "reference": "RFC8693 - Section 3"
     },
     {
       "urn": "urn:ietf:params:oauth:token-type:refresh_token",
       "common_name": "Token type URI for an OAuth 2.0 refresh token",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 3"
+      "reference": "RFC8693 - Section 3"
     },
     {
       "urn": "urn:ietf:params:oauth:token-type:id_token",
       "common_name": "Token type URI for an ID Token",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 3"
+      "reference": "RFC8693 - Section 3"
     },
     {
       "urn": "urn:ietf:params:oauth:token-type:saml1",
       "common_name": "Token type URI for a base64url-encoded SAML 1.1 assertion",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 3"
+      "reference": "RFC8693 - Section 3"
     },
     {
       "urn": "urn:ietf:params:oauth:token-type:saml2",
       "common_name": "Token type URI for a base64url-encoded SAML 2.0 assertion",
       "change_controller": "IESG",
-      "reference": "RFC8693, Section 3"
+      "reference": "RFC8693 - Section 3"
     },
     {
       "urn": "urn:ietf:params:oauth:request_uri",
       "common_name": "A URN Sub-Namespace for OAuth Request URIs.",
       "change_controller": "IESG",
-      "reference": "RFC9126, Section 2.2"
+      "reference": "RFC9126 - Section 2.2"
     },
     {
       "urn": "urn:ietf:params:oauth:jwk-thumbprint",

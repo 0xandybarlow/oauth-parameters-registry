@@ -1,11 +1,9 @@
 {
   "name": "PKCE Code Challenge Methods",
   "metadata": {
-    "required_specifications": [
-      "RFC7636"
-    ],
+    "required_specifications": ["RFC7636"],
     "datasource_url": "https://www.iana.org/assignments/oauth-parameters/pkce-code-challenge-method.csv",
-    "last_processed": "2024-10-17T07:46:39.043Z"
+    "last_processed": "2024-10-18T15:45:01.560Z"
   },
   "parameters": [
     {

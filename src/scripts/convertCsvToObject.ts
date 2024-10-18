@@ -18,7 +18,19 @@ const transformedRecords = (data: Record<string, string>[]) => {
     const transformedRecord: { [key: string]: string } = {};
     for (const key in record) {
       if (Object.prototype.hasOwnProperty.call(record, key)) {
-        transformedRecord[transformKeyName(key)] = removeBrackets(record[key]);
+        const value = record[key];
+        if (key === 'Reference') {
+          const parts = value
+            .split('][')
+            .map((item) => item.replace(/[\[\]]/g, '').trim());
+          transformedRecord[transformKeyName(key)] = parts
+            .map((part) => part.replace(/, Section/g, ' - Section'))
+            .join(', ');
+        } else {
+          transformedRecord[transformKeyName(key)] = removeBrackets(value)
+            .replace(/\s+/g, ' ')
+            .trim();
+        }
       }
     }
     return transformedRecord;

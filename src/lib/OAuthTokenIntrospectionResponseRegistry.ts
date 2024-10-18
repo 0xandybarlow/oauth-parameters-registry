@@ -11,8 +11,7 @@ export class OAuthTokenIntrospectionResponseRegistry extends BaseRegistry<OAuthT
     parameter: string,
   ): OAuthTokenIntrospectionResponsePayload | undefined {
     return this.getParametersInternal().find(
-      (item: OAuthTokenIntrospectionResponsePayload) =>
-        item.name === parameter,
+      (item: OAuthTokenIntrospectionResponsePayload) => item.name === parameter,
     );
   }
 }
