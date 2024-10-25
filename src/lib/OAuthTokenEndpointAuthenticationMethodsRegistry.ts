@@ -1,10 +1,10 @@
 import { BaseRegistry } from './BaseRegistry';
-import data from '../data/oauth_token_endpoint_authentication_methods.json';
+import { OAuthRegistry } from 'iana-registry-data-lib';
 import { OAuthTokenEndpointAuthenticationMethodsPayload } from './interfaces';
 
 export class OAuthTokenEndpointAuthenticationMethodsRegistry extends BaseRegistry<OAuthTokenEndpointAuthenticationMethodsPayload> {
   constructor() {
-    super(data);
+    super(OAuthRegistry.OauthTokenEndpointAuthenticationMethods);
   }
 
   getParameter(

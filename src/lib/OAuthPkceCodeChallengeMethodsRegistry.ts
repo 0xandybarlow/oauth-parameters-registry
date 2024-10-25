@@ -1,10 +1,10 @@
 import { BaseRegistry } from './BaseRegistry';
-import data from '../data/pkce_code_challenge_methods.json';
+import { OAuthRegistry } from 'iana-registry-data-lib';
 import { OAuthPkceCodeChallengeMethodsPayload } from './interfaces';
 
 export class OAuthPkceCodeChallengeMethodsRegistry extends BaseRegistry<OAuthPkceCodeChallengeMethodsPayload> {
   constructor() {
-    super(data);
+    super(OAuthRegistry.PkceCodeChallengeMethods);
   }
 
   getParameter(

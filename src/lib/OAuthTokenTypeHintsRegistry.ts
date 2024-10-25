@@ -1,10 +1,10 @@
 import { BaseRegistry } from './BaseRegistry';
-import data from '../data/oauth_token_type_hints.json';
+import { OAuthRegistry } from 'iana-registry-data-lib';
 import { OAuthTokenTypeHintsPayload } from './interfaces';
 
 export class OAuthTokenTypeHintsRegistry extends BaseRegistry<OAuthTokenTypeHintsPayload> {
   constructor() {
-    super(data);
+    super(OAuthRegistry.OauthTokenTypeHints);
   }
 
   getParameter(parameter: string): OAuthTokenTypeHintsPayload | undefined {

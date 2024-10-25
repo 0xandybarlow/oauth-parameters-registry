@@ -1,10 +1,10 @@
 import { BaseRegistry } from './BaseRegistry';
-import data from '../data/oauth_dynamic_client_registration_metadata.json';
+import { OAuthRegistry } from 'iana-registry-data-lib';
 import { OAuthDynamicClientRegistrationMetadataPayload } from './interfaces';
 
 export class OAuthDynamicClientRegistrationMetadataRegistry extends BaseRegistry<OAuthDynamicClientRegistrationMetadataPayload> {
   constructor() {
-    super(data);
+    super(OAuthRegistry.OauthDynamicClientRegistrationMetadata);
   }
 
   getParameter(

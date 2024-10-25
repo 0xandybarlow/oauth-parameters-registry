@@ -1,10 +1,10 @@
 import { BaseRegistry } from './BaseRegistry';
-import data from '../data/oauth_token_introspection_response.json';
+import { OAuthRegistry } from 'iana-registry-data-lib';
 import { OAuthTokenIntrospectionResponsePayload } from './interfaces';
 
 export class OAuthTokenIntrospectionResponseRegistry extends BaseRegistry<OAuthTokenIntrospectionResponsePayload> {
   constructor() {
-    super(data);
+    super(OAuthRegistry.OauthTokenIntrospectionResponse);
   }
 
   getParameter(

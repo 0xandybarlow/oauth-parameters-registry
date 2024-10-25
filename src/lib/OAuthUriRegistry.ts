@@ -1,10 +1,10 @@
 import { BaseRegistry } from './BaseRegistry';
-import data from '../data/oauth_uri.json';
+import { OAuthRegistry } from 'iana-registry-data-lib';
 import { OAuthUriRegistryPayload } from './interfaces';
 
 export class OAuthUriRegistry extends BaseRegistry<OAuthUriRegistryPayload> {
   constructor() {
-    super(data);
+    super(OAuthRegistry.OauthUri);
   }
 
   getParameter(parameter: string): OAuthUriRegistryPayload | undefined {
