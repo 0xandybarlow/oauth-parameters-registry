@@ -22,7 +22,11 @@
     "parameters",
     "registry",
     "iana",
-    "ietf"
+    "ietf",
+    "rfc",
+    "json",
+    "data",
+    "csv"
   ],
   "author": "Andy Barlow",
   "license": "MIT",
@@ -45,8 +49,6 @@
     "typescript": "^5.6.2"
   },
   "dependencies": {
-    "axios": "^1.7.7",
-    "csv-parse": "^5.5.6",
     "iana-registry-data-lib": "^1.0.0"
   },
   "repository": {
