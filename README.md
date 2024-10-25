@@ -3,6 +3,7 @@
 **oauth-parameters-registry** is a Node.js module that provides a registry of OAuth parameters.
 The registry is based on the [IANA OAuth Parameters Registry](https://www.iana.org/assignments/oauth-parameters/oauth-parameters.xhtml), which is a registry of parameters registered in the OAuth protocol with IANA. The module provides a simple API for accessing the registry, including methods for getting the name of the registry, the metadata of the registry, a specific parameter by name, and all parameters in the registry.
 
+All of the underlying JSON that supports this lib is generated over at the `iana-registry-data-lib` project, which can be found here at [iana-registry-data-lib](https://github.com/0xandybarlow/iana-registry-data-importer).
 ## Installation
 
 ```bash
@@ -71,16 +72,16 @@ would return;
 ```js
 {
   name: 'OAuth Parameters',
-    metadata: {
+          metadata: {
     required_specifications: [ 'RFC6749' ],
-      datasource_url: 'https://www.iana.org/assignments/oauth-parameters/parameters.csv',
-      last_processed: '2024-10-16T15:23:43.284Z'
+            datasource_url: 'https://www.iana.org/assignments/oauth-parameters/parameters.csv',
+            last_processed: '2024-10-24T17:49:28.465Z'
   },
   parameter: {
     name: 'authorization_details',
-      parameter_usage_location: 'authorization request, token request, token response',
-      change_controller: 'IETF',
-      reference: 'RFC9396'
+            parameter_usage_location: 'authorization request, token request, token response',
+            change_controller: 'IETF',
+            reference: 'RFC9396'
   },
   parameters: [
     {
@@ -101,6 +102,13 @@ would return;
       change_controller: 'IETF',
       reference: 'RFC6749'
     },
+    {
+      name: 'redirect_uri',
+      parameter_usage_location: 'authorization request, token request',
+      change_controller: 'IETF',
+      reference: 'RFC6749'
+    },
+
     ...
   ]
 }

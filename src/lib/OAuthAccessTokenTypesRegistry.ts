@@ -1,10 +1,10 @@
 import { BaseRegistry } from './BaseRegistry';
-import data from '../data/oauth_access_token_types.json';
+import { OAuthRegistry } from 'iana-registry-data-lib';
 import { OAuthAccessTokenTypesPayload } from './interfaces';
 
 export class OAuthAccessTokenTypesRegistry extends BaseRegistry<OAuthAccessTokenTypesPayload> {
   constructor() {
-    super(data);
+    super(OAuthRegistry.OauthAccessTokenTypes);
   }
 
   getParameter(parameter: string): OAuthAccessTokenTypesPayload | undefined {

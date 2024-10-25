@@ -1,10 +1,10 @@
 import { BaseRegistry } from './BaseRegistry';
-import data from '../data/oauth_extensions_error_registry.json';
+import { OAuthRegistry } from 'iana-registry-data-lib';
 import { OAuthExtensionsErrorPayload } from './interfaces';
 
 export class OAuthExtensionsErrorRegistry extends BaseRegistry<OAuthExtensionsErrorPayload> {
   constructor() {
-    super(data);
+    super(OAuthRegistry.OauthExtensionsErrorRegistry);
   }
 
   getParameter(parameter: string): OAuthExtensionsErrorPayload | undefined {

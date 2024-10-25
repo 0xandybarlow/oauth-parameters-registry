@@ -38,4 +38,7 @@ export default [
       'prettier/prettier': 'error',
     },
   },
+  {
+    ignores: ['**/*.js', 'dist/'],
+  },
 ];

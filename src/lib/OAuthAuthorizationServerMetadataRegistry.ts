@@ -1,10 +1,10 @@
 import { BaseRegistry } from './BaseRegistry';
-import data from '../data/oauth_authorization_server_metadata.json';
+import { OAuthRegistry } from 'iana-registry-data-lib';
 import { OAuthAuthorizationServerMetadataPayload } from './interfaces';
 
 export class OAuthAuthorizationServerMetadataRegistry extends BaseRegistry<OAuthAuthorizationServerMetadataPayload> {
   constructor() {
-    super(data);
+    super(OAuthRegistry.OauthAuthorizationServerMetadata);
   }
 
   getParameter(
