@@ -1,18 +1,12 @@
 import { BaseRegistry } from './BaseRegistry';
-import { OAuthRegistry } from 'iana-registry-data-lib';
-import { OAuthAuthorizationEndpointResponseTypesPayload } from './interfaces';
+import { OAuth } from 'iana-registry-data-lib';
+import type { OAuthAuthorizationEndpointResponseTypesPayload } from './interfaces';
 
-export class OAuthAuthorizationEndpointResponseTypesRegistry extends BaseRegistry<OAuthAuthorizationEndpointResponseTypesPayload> {
+export class OAuthAuthorizationEndpointResponseTypesRegistry extends BaseRegistry<
+  OAuthAuthorizationEndpointResponseTypesPayload,
+  'name'
+> {
   constructor() {
-    super(OAuthRegistry.OauthAuthorizationEndpointResponseTypes);
-  }
-
-  getParameter(
-    parameter: string,
-  ): OAuthAuthorizationEndpointResponseTypesPayload | undefined {
-    return this.getParametersInternal().find(
-      (item: OAuthAuthorizationEndpointResponseTypesPayload) =>
-        item.name === parameter,
-    );
+    super(OAuth.oauth_authorization_endpoint_response_types, 'name');
   }
 }

@@ -1,18 +1,15 @@
 import { BaseRegistry } from './BaseRegistry';
-import { OAuthRegistry } from 'iana-registry-data-lib';
-import { OAuthPkceCodeChallengeMethodsPayload } from './interfaces';
+import { OAuth } from 'iana-registry-data-lib';
+import type { OAuthPkceCodeChallengeMethodsPayload } from './interfaces';
 
-export class OAuthPkceCodeChallengeMethodsRegistry extends BaseRegistry<OAuthPkceCodeChallengeMethodsPayload> {
+export class OAuthPkceCodeChallengeMethodsRegistry extends BaseRegistry<
+  OAuthPkceCodeChallengeMethodsPayload,
+  'code_challenge_method_parameter_name'
+> {
   constructor() {
-    super(OAuthRegistry.PkceCodeChallengeMethods);
-  }
-
-  getParameter(
-    parameter: string,
-  ): OAuthPkceCodeChallengeMethodsPayload | undefined {
-    return this.getParametersInternal().find(
-      (item: OAuthPkceCodeChallengeMethodsPayload) =>
-        item.code_challenge_method_parameter_name === parameter,
+    super(
+      OAuth.pkce_code_challenge_methods,
+      'code_challenge_method_parameter_name',
     );
   }
 }

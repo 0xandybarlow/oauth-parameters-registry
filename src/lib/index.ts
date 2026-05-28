@@ -9,3 +9,4 @@ export { OAuthTokenIntrospectionResponseRegistry } from './OAuthTokenIntrospecti
 export { OAuthTokenTypeHintsRegistry } from './OAuthTokenTypeHintsRegistry';
 export { OAuthUriRegistry } from './OAuthUriRegistry';
 export { OAuthPkceCodeChallengeMethodsRegistry } from './OAuthPkceCodeChallengeMethodsRegistry';
+export { createRegistry } from './factory';

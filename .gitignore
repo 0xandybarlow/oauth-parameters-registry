@@ -4,6 +4,7 @@
 # Build output
 /dist
 /build
+/integration-tests/*.js
 
 # Logs
 logs
@@ -68,3 +69,4 @@ jspm_packages
 .vscode
 *.sublime-project
 *.sublime-workspace
+AGENTS.md

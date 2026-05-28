@@ -1,15 +1,12 @@
 import { BaseRegistry } from './BaseRegistry';
-import { OAuthRegistry } from 'iana-registry-data-lib';
-import { OAuthAccessTokenTypesPayload } from './interfaces';
+import { OAuth } from 'iana-registry-data-lib';
+import type { OAuthAccessTokenTypesPayload } from './interfaces';
 
-export class OAuthAccessTokenTypesRegistry extends BaseRegistry<OAuthAccessTokenTypesPayload> {
+export class OAuthAccessTokenTypesRegistry extends BaseRegistry<
+  OAuthAccessTokenTypesPayload,
+  'name'
+> {
   constructor() {
-    super(OAuthRegistry.OauthAccessTokenTypes);
-  }
-
-  getParameter(parameter: string): OAuthAccessTokenTypesPayload | undefined {
-    return this.getParametersInternal().find(
-      (item: OAuthAccessTokenTypesPayload) => item.name === parameter,
-    );
+    super(OAuth.oauth_access_token_types, 'name');
   }
 }

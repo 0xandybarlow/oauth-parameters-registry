@@ -1,15 +1,12 @@
 import { BaseRegistry } from './BaseRegistry';
-import { OAuthRegistry } from 'iana-registry-data-lib';
-import { OAuthExtensionsErrorPayload } from './interfaces';
+import { OAuth } from 'iana-registry-data-lib';
+import type { OAuthExtensionsErrorPayload } from './interfaces';
 
-export class OAuthExtensionsErrorRegistry extends BaseRegistry<OAuthExtensionsErrorPayload> {
+export class OAuthExtensionsErrorRegistry extends BaseRegistry<
+  OAuthExtensionsErrorPayload,
+  'name'
+> {
   constructor() {
-    super(OAuthRegistry.OauthExtensionsErrorRegistry);
-  }
-
-  getParameter(parameter: string): OAuthExtensionsErrorPayload | undefined {
-    return this.getParametersInternal().find(
-      (item: OAuthExtensionsErrorPayload) => item.name === parameter,
-    );
+    super(OAuth.oauth_extensions_error_registry, 'name');
   }
 }

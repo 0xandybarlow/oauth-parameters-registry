@@ -1,18 +1,15 @@
 import { BaseRegistry } from './BaseRegistry';
-import { OAuthRegistry } from 'iana-registry-data-lib';
-import { OAuthDynamicClientRegistrationMetadataPayload } from './interfaces';
+import { OAuth } from 'iana-registry-data-lib';
+import type { OAuthDynamicClientRegistrationMetadataPayload } from './interfaces';
 
-export class OAuthDynamicClientRegistrationMetadataRegistry extends BaseRegistry<OAuthDynamicClientRegistrationMetadataPayload> {
+export class OAuthDynamicClientRegistrationMetadataRegistry extends BaseRegistry<
+  OAuthDynamicClientRegistrationMetadataPayload,
+  'client_metadata_name'
+> {
   constructor() {
-    super(OAuthRegistry.OauthDynamicClientRegistrationMetadata);
-  }
-
-  getParameter(
-    parameter: string,
-  ): OAuthDynamicClientRegistrationMetadataPayload | undefined {
-    return this.getParametersInternal().find(
-      (item: OAuthDynamicClientRegistrationMetadataPayload) =>
-        item.client_metadata_name === parameter,
+    super(
+      OAuth.oauth_dynamic_client_registration_metadata,
+      'client_metadata_name',
     );
   }
 }

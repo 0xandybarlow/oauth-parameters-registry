@@ -1,18 +1,12 @@
 import { BaseRegistry } from './BaseRegistry';
-import { OAuthRegistry } from 'iana-registry-data-lib';
-import { OAuthAuthorizationServerMetadataPayload } from './interfaces';
+import { OAuth } from 'iana-registry-data-lib';
+import type { OAuthAuthorizationServerMetadataPayload } from './interfaces';
 
-export class OAuthAuthorizationServerMetadataRegistry extends BaseRegistry<OAuthAuthorizationServerMetadataPayload> {
+export class OAuthAuthorizationServerMetadataRegistry extends BaseRegistry<
+  OAuthAuthorizationServerMetadataPayload,
+  'metadata_name'
+> {
   constructor() {
-    super(OAuthRegistry.OauthAuthorizationServerMetadata);
-  }
-
-  getParameter(
-    parameter: string,
-  ): OAuthAuthorizationServerMetadataPayload | undefined {
-    return this.getParametersInternal().find(
-      (item: OAuthAuthorizationServerMetadataPayload) =>
-        item.metadata_name === parameter,
-    );
+    super(OAuth.oauth_authorization_server_metadata, 'metadata_name');
   }
 }

@@ -1,33 +1,44 @@
-import { JSONRegistry, Registry, RegistryMetadata } from './interfaces';
+import type {
+  Registry,
+  RegistryDataset,
+  RegistryEntry,
+  RegistryMetadata,
+} from './interfaces';
 
-export abstract class BaseRegistry<T> implements Registry<T> {
-  readonly #data: JSONRegistry;
-  readonly #name: string;
-  readonly #metadata: RegistryMetadata;
-  readonly #parameters: T[];
+export class BaseRegistry<E extends RegistryEntry, K extends string>
+  implements Registry<E>
+{
+  readonly #dataset: RegistryDataset<E>;
+  readonly #idKey: K;
 
-  protected constructor(data: JSONRegistry) {
-    this.#data = data;
-    this.#name = this.#data.name;
-    this.#metadata = this.#data.metadata;
-    this.#parameters = this.#data.parameters as unknown as T[];
+  constructor(dataset: RegistryDataset<E>, idKey: K) {
+    if (!dataset || dataset.schema_version !== 2) {
+      throw new Error('Unsupported dataset: expected schema_version 2');
+    }
+    this.#dataset = dataset;
+    this.#idKey = idKey;
   }
 
-  protected getParametersInternal(): T[] {
-    return this.#parameters;
+  protected getEntriesInternal(): E[] {
+    return this.#dataset.entries;
   }
 
-  abstract getParameter(parameter: string): T | undefined;
+  getEntry(value: string): E | undefined {
+    return this.getEntriesInternal().find(
+      (entry) =>
+        (entry as RegistryEntry & Record<K, unknown>)[this.#idKey] === value,
+    );
+  }
 
-  getParameters(): T[] {
-    return this.getParametersInternal();
+  getEntries(): E[] {
+    return this.getEntriesInternal();
   }
 
   getMetadata(): RegistryMetadata {
-    return this.#metadata;
+    return this.#dataset.metadata;
   }
 
   getName(): string {
-    return this.#name;
+    return this.#dataset.name;
   }
 }

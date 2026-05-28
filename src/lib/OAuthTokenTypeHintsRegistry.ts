@@ -1,15 +1,12 @@
 import { BaseRegistry } from './BaseRegistry';
-import { OAuthRegistry } from 'iana-registry-data-lib';
-import { OAuthTokenTypeHintsPayload } from './interfaces';
+import { OAuth } from 'iana-registry-data-lib';
+import type { OAuthTokenTypeHintsPayload } from './interfaces';
 
-export class OAuthTokenTypeHintsRegistry extends BaseRegistry<OAuthTokenTypeHintsPayload> {
+export class OAuthTokenTypeHintsRegistry extends BaseRegistry<
+  OAuthTokenTypeHintsPayload,
+  'hint_value'
+> {
   constructor() {
-    super(OAuthRegistry.OauthTokenTypeHints);
-  }
-
-  getParameter(parameter: string): OAuthTokenTypeHintsPayload | undefined {
-    return this.getParametersInternal().find(
-      (item: OAuthTokenTypeHintsPayload) => item.hint_value === parameter,
-    );
+    super(OAuth.oauth_token_type_hints, 'hint_value');
   }
 }
